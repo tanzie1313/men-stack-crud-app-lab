@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const foodSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    tasty: { type: Boolean, default: true },
+    spicy: { type: Boolean, default: true },
     ingredients: { type: Array, default: [] }
     })
 
