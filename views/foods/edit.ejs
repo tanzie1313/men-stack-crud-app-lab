@@ -1,0 +1,12 @@
+<body>
+  
+    <h1>Edit <%= food.name %></h1>
+    <form action="/foods/<%= food._id %>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="<%= food.name %>" />
+        <input type="checkbox" name="spicy" id="spicy" <% if (food.spicy) { %> checked <% } %> />
+        <button type="submit">Update Food</button>
+    </form>
+</body>
+    <a href="/foods">Back to Foods</a>
+  </body>
